@@ -13,9 +13,12 @@ class Solution {
         // code here
         
         int ans = 1;
+
+        //If one rectangle is on the left side or right side of the other rectangle
         if(L2[0]>R1[0] || L1[0]>R2[0])
             ans = 0;
             
+        // If one rectangle is either on top or bottom of the other rectangle
         if(R2[1]>L1[1] || R1[1]>L2[1])
             ans = 0;
             
